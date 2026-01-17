@@ -1,0 +1,12 @@
+SQL injection:
+' OR 1=1
+UNION SELECT
+union all select
+admin' --
+
+XSS (Cross-Site Scripting):
+<script>alert(1)</script>
+
+Directory Traversal:
+../etc/passwd
+

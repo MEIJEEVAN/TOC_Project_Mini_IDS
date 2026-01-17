@@ -9,12 +9,11 @@ from alerts import detect_attack
 def packet_handler(packet):
     if packet.haslayer(Raw):
         raw_payload = packet[Raw].load.decode(errors="ignore")
-
-        # Decode URL-encoded payloads
         payload = unquote(raw_payload)
 
-        # Optional but STRONGLY recommended: only inspect HTTP requests
         if not payload.startswith(("GET", "POST", "PUT", "DELETE")):
+            return
+        if "/socket.io/" in payload:
             return
 
         print("[DEBUG] Payload:", payload)
@@ -27,7 +26,3 @@ def packet_handler(packet):
 
 def start_sniffing():
     sniff(iface="lo", filter="tcp", prn=packet_handler, store=False)
-
-
-if __name__ == "__main__":
-    start_sniffing()
