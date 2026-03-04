@@ -5,7 +5,7 @@ Theory of Computation
 
 ## Contributors
 - [Meijeevan K.T](https://github.com/MEIJEEVAN)
-- Contributor 2
+- [Shanmuka Priyan V](https://github.com/ShanmukaPriyan-V2025)
 - Contributor 3
 
 ## Automata Types
@@ -51,4 +51,4 @@ Mini_IDS/
 
 ---
 
-_Last updated: 2026-03-04 07:38:32 UTC_
+_Last updated: 2026-03-04 07:40:15 UTC_
