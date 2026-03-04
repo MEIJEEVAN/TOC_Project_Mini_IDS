@@ -1,60 +1,54 @@
-# Project Documentation for Mini IDS
+# Mini IDS using Automata
 
-## Project Name
-Mini Intrusion Detection System (Mini IDS)
-
-## Course Information
-Course Name: Cybersecurity 101
-Instructor: Dr. Jane Doe
+## Course
+Theory of Computation
 
 ## Contributors
-- John Smith
-- Alice Johnson
-- MEIJEEVAN
+- Contributor 1
+- Contributor 2
+- Contributor 3
 
 ## Automata Types
-- Finite State Machine (FSM)
-- Pushdown Automata (PDA)
+- NFA (Nondeterministic Finite Automaton)
+- DFA (Deterministic Finite Automaton)
+- PDA (Pushdown Automaton)
 
-## Technology Stack
-- Language: Python
-- Framework: Flask
-- Database: SQLite
-- Tools: Git, Docker
+## Tech Stack
+- Python (64.2%)
+- HTML (35.8%)
+- Flask
+- Scapy
 
 ## Project Overview
-This Mini IDS aims to detect various intrusion patterns by monitoring network traffic using a set of predefined rules and behavior analysis. The system will provide real-time alerts when suspicious activity is identified.
+This project implements a Mini Intrusion Detection System (IDS) using various types of automata. It aims to detect abnormal patterns in network traffic and identify potential security threats. The system can classify different types of attacks based on predefined rules and patterns.
 
 ## Project Structure
 ```
 Mini_IDS/
-│   README.md
-│   app.py
-│   requirements.txt
-│
-├───config/
-│       config.yaml
-│
-├───detectors/
-│       __init__.py
-│       detector.py
-│
-├───models/
-│       __init__.py
-│       model.py
-│
-├───tests/
-│       test_detector.py
-│       test_model.py
-│
-└───utils/
-        __init__.py
-        helpers.py
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   └── templates/
+│       └── index.html
+├── static/
+│   ├── css/
+│   └── js/
+├── models/
+│   ├── nfa.py
+│   ├── dfa.py
+│   └── pda.py
+└── main.py
 ```
 
 ## Attack Patterns Detected
-- Port Scanning
-- DDoS Attacks
-- SQL Injection
-- Phishing Attempts
-- Malware Distribution
+- Brute Force
+- Command Injection
+- Login Bypass
+- Path Traversal
+- Port Scan
+- Session Anomaly
+- SQL Injection via DFA/NFA/PDA
+
+---
+
+_Last updated: 2026-03-04 07:29:49 UTC_
